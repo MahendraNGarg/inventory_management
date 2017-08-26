@@ -16,7 +16,7 @@ class ItemListView(generic.ListView):
     def get_queryset(self):
         if 'all_user' in self.request.GET:
             urlencode = urllib.urlencode(self.request.GET)
-            item_list = requests.get('http://localhost:8000/items/?'+urlencode).json()
+            item_list = requests.get('http://mng-inventory-management.herokuapp.com/items/?'+urlencode).json()
             item_ids = []
             for item in item_list:
                 item_ids.append(item['id'])
