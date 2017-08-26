@@ -4,11 +4,11 @@
   <div class="row">
       <form action="{% url 'inventory:items' %}" method="get">
         <label>Active Users</label>
-        <input type="radio" id="active_user" name="active_user" value="Active Users" onChange='this.form.submit();' {% if active_user %} checked="true" {% endif %}/>
+        <input type="radio" id="active_user" name="active_user" value="Active Items" onChange='this.form.submit();' {% if active_user %} checked="true" {% endif %}/>
       </form>
       <form action="{% url 'inventory:items' %}" method="get">
         <label>All Users</label>
-        <input type="radio" id="all_user" name="all_user" {% if all_user %} checked="true" {% endif %} value="All Users"  onChange='this.form.submit();'/>
+        <input type="radio" id="all_user" name="all_user" {% if all_user %} checked="true" {% endif %} value="All Items"  onChange='this.form.submit();'/>
       </form>
     </div>
 </div>
