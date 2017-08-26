@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '=uvn)$u3_b#jvqm9x(dxwv79p2sa4__on&9q^@w^fyh)p991k8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mng-inventory-management.herokuapp.com']
 
 
 # Application definition
