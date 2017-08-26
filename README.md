@@ -42,6 +42,10 @@ this is the process to configure and run the applicaiton, Once application start
 			
 			http://localhost:8000/
 
+I also used Django-REST framework to get the item list. you can access this by your ubuntu terminal by entering the following curl command
+
+			curl -X GET 'http://localhost:8000/items/?all_user=All+Users'
+
 that's it!
 
 All the best! :-)
